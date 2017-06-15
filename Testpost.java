@@ -21,8 +21,7 @@ public class Testpost
 				/*PreparedStatement ps=con.prepareStatement("insert into Test.emp(id,name,age,address) values(?,?,?,?)");
 				ps.setInt(1, 3);
 				ps.setString(2, "kannan");
-				ps.setInt(3, 25);
-				ps.setString(4, "salem");
+				
 				ps.executeUpdate();*/
 				System.out.println("success");
 			}		}
