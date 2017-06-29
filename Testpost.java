@@ -18,13 +18,15 @@ public class Testpost
 				Statement st=con.createStatement();
 				String sql="insert into employee(id,name,age,address)"+"values(9,'karthik',55,'salem');";
 				st.executeUpdate(sql);
-				/*PreparedStatement ps=con.prepareStatement("insert into Test.emp(id,name,age,address) values(?,?,?,?)");
+				PreparedStatement ps=con.prepareStatement("insert into Test.emp(id,name,age,address) values(?,?,?,?)");
 				ps.setInt(1, 3);
 				ps.setString(2, "kannan");
-				
-				ps.executeUpdate();*/
+				ps.executeUpdate();
 				System.out.println("success");
-			}		}
+				System.out.println("success");
+				
+			}		
+		}
 		catch(SQLException e)
 		{
 			e.printStackTrace();
